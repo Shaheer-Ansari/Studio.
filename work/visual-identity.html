@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visual Identity — Graphic Design Case Study</title>
+<meta name="description" content="Case study: a poster and campaign identity system spanning print, desktop and social — graphic design and art direction.">
+<link rel="canonical" href="https://example.com/work/visual-identity.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CreativeWork","name":"Visual Identity","about":"Graphic design case study","creator":{"@type":"Person","name":"Visual Editor & Designer"}}
+</script>
+<style>
+  :root{
+    --bg:#0a0a0a; --surface:#121212; --line:rgba(245,245,241,.09); --line-strong:rgba(245,245,241,.16);
+    --ink:#f3f1ea; --ink-dim:#9a9994; --violet:#6c4cff; --violet-soft:#8b6fff;
+    --ff-display:'Fraunces',serif; --ff-head:'Space Grotesk',sans-serif; --ff-body:'Inter',sans-serif;
+  }
+  *{box-sizing:border-box;} html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion:reduce){*{animation-duration:.01ms !important; transition-duration:.01ms !important; scroll-behavior:auto !important;}}
+  body{margin:0; background:var(--bg); color:var(--ink); font-family:var(--ff-body); line-height:1.6; -webkit-font-smoothing:antialiased;}
+  img{max-width:100%; display:block;}
+  a{color:inherit; text-decoration:none;}
+  .wrap{max-width:1100px; margin:0 auto; padding:0 32px;}
+  @media (max-width:640px){.wrap{padding:0 20px;}}
+  header{position:fixed; top:0; left:0; right:0; z-index:50; background:rgba(10,10,10,.75); backdrop-filter:blur(10px); border-bottom:1px solid var(--line);}
+  .nav{display:flex; justify-content:space-between; align-items:center; height:76px;}
+  .logo{font-family:var(--ff-display); font-size:20px;}
+  .logo span{color:var(--violet-soft);}
+  .back{font-family:var(--ff-head); font-size:14px; color:var(--ink-dim); display:flex; gap:8px; align-items:center;}
+  .back:hover{color:var(--ink);}
+  .eyebrow{font-family:var(--ff-head); font-size:13px; letter-spacing:.14em; text-transform:uppercase; color:var(--violet-soft); display:flex; align-items:center; gap:10px; margin:0 0 16px;}
+  .eyebrow::before{content:''; width:24px; height:1px; background:var(--violet-soft);}
+  .hero{padding:170px 0 60px;}
+  .hero h1{font-family:var(--ff-head); font-weight:700; text-transform:uppercase; font-size:clamp(34px,6vw,64px); line-height:1.02; margin:0 0 24px;}
+  .meta-row{display:grid; grid-template-columns:repeat(4,1fr); gap:24px; margin-top:48px; padding-top:28px; border-top:1px solid var(--line);}
+  .meta-row div span{display:block; font-family:var(--ff-head); font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-dim); margin-bottom:8px;}
+  .meta-row div b{font-size:15px; font-weight:500;}
+  @media (max-width:700px){.meta-row{grid-template-columns:1fr 1fr;}}
+  .hero-img{margin-top:50px; border:1px solid var(--line); border-radius:2px; overflow:hidden;}
+  .hero-img img{width:100%; object-fit:cover;}
+  .story{padding:90px 0 0; border-top:1px solid var(--line);}
+  .story-grid{display:grid; grid-template-columns:.9fr 1.6fr; gap:60px;}
+  .story h2{font-family:var(--ff-display); font-style:italic; font-size:clamp(24px,3vw,34px); margin:0;}
+  .story p{color:var(--ink-dim); font-size:16px; max-width:640px; margin:0 0 16px;}
+  @media (max-width:760px){.story-grid{grid-template-columns:1fr; gap:20px;}}
+  .story:last-of-type{padding-bottom:90px; border-bottom:1px solid var(--line);}
+  .gallery{padding:60px 0 90px; display:grid; grid-template-columns:1fr 1fr; gap:18px;}
+  .gallery img{border:1px solid var(--line); border-radius:2px; width:100%; aspect-ratio:4/3; object-fit:cover;}
+  @media (max-width:700px){.gallery{grid-template-columns:1fr;}}
+  .tools-line{padding:60px 0; border-top:1px solid var(--line); display:flex; gap:14px; flex-wrap:wrap;}
+  .chip{font-family:var(--ff-head); font-size:13px; padding:10px 18px; border:1px solid var(--line-strong); border-radius:999px; color:var(--ink-dim);}
+  .next{padding:100px 0; border-top:1px solid var(--line); display:flex; justify-content:space-between; align-items:center; gap:24px; flex-wrap:wrap;}
+  .next a{font-family:var(--ff-display); font-size:clamp(24px,4vw,40px); font-style:italic;}
+  .next a:hover{color:var(--violet-soft);}
+  .cta{padding:100px 0; border-top:1px solid var(--line); text-align:center;}
+  .cta h2{font-family:var(--ff-display); font-size:clamp(30px,5vw,54px);}
+  .btn{display:inline-flex; align-items:center; gap:10px; font-family:var(--ff-head); font-weight:600; font-size:14px; text-transform:uppercase; padding:15px 26px; border-radius:2px; background:var(--violet); color:#fff; margin-top:28px; transition:.3s;}
+  .btn:hover{background:var(--violet-soft); transform:translateY(-2px);}
+  footer{padding:40px 0; border-top:1px solid var(--line); text-align:center; color:var(--ink-dim); font-size:13px;}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a href="../index.html" class="logo">Studio<span>.</span></a>
+    <a href="../index.html#work" class="back">← All Work</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Case Study 03</span>
+    <h1>Visual Identity</h1>
+    <p style="color:var(--ink-dim); font-size:17px; max-width:600px;">A poster and campaign identity system carried consistently across print, desktop and social.</p>
+    <div class="meta-row">
+      <div><span>Client</span><b>[Client Name]</b></div>
+      <div><span>Service</span><b>Graphic Design</b></div>
+      <div><span>Type</span><b>Campaign / Art Direction</b></div>
+      <div><span>Tools</span><b>Illustrator, Photoshop</b></div>
+    </div>
+    <div class="hero-img">
+      <img src="../assets/visual-identity-poster-branding-mockups.png" alt="Poster, business card and social mockups for a visual identity campaign" width="1400" height="800">
+    </div>
+  </div>
+</section>
+
+<section class="story">
+  <div class="wrap story-grid">
+    <h2>Challenge</h2>
+    <p>[Describe the brief and where the identity needed to show up — posters, social, print.]</p>
+  </div>
+</section>
+<section class="story">
+  <div class="wrap story-grid">
+    <h2>Creative Approach</h2>
+    <p>[Describe the visual language — shape, color and type decisions that carry the identity.]</p>
+  </div>
+</section>
+<section class="story">
+  <div class="wrap story-grid">
+    <h2>Process</h2>
+    <p>[Walk through concepting, the design system and how it was applied across formats.]</p>
+  </div>
+</section>
+<section class="story">
+  <div class="wrap story-grid">
+    <h2>Result</h2>
+    <p>[Describe the final rollout and how the identity performed across channels.]</p>
+  </div>
+</section>
+
+<div class="wrap gallery">
+  <img src="../assets/graphic-design-branding-mockup-desk.png" alt="Designer's desktop with layout software open and branding mockups" loading="lazy">
+  <img src="../assets/social-media-content-phone-mockups.png" alt="Campaign assets adapted for social media" loading="lazy">
+</div>
+
+<div class="wrap tools-line">
+  <span class="chip">Illustrator</span>
+  <span class="chip">Photoshop</span>
+</div>
+
+<div class="wrap next">
+  <span style="font-family:var(--ff-head); font-size:13px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-dim);">Next Project</span>
+  <a href="cinematic-campaign.html">Cinematic Campaign →</a>
+</div>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>Have a project in mind?</h2>
+    <a href="../index.html#contact" class="btn">Start a Project</a>
+  </div>
+</section>
+
+<footer>© 2026 Studio. All rights reserved.</footer>
+</body>
+</html>
